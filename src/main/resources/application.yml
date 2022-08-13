@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: myTestService
+  datasource:
+    #url切换数据库之后如果对应数据库名称和路径有变动，需要修改url
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: Lvshuzheng1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+# 指定mapper.xml文件扫描路径
+mybatis:
+  mapper-locations: mapper/*.xml
